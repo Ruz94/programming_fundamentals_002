@@ -1,0 +1,34 @@
+In what data type have we chosen to represent a book?
+The catalogue is a complex data type of Array containing books which are primitive data types of string
+
+Is this the best data type, do you think? Could we have chosen a more appropriate data type? Why?
+I think a object would've been a better data type. This would've made it easier to reference the key-value pairs, for e.g.
+the book could've been defined as an object with two properties of title and author.
+
+Take a read of the Jest Documentation about Matchers such as toBe and toEqual. What other matchers might come in useful? Check the tests you have written and make a list of alternative matchers which you might have been able to use.
+toBeTruthy / toBeFalsy - returns true/false if the book in question in the checkBook function did or didn't exist in the array catalogue.
+toContain - if no books begun with the first letter
+
+What data types are considered "complex" data types?
+Arrays
+Objects
+
+What data types are considered "primitive" data types?
+null
+undefined
+boolean
+number
+string
+
+In JavaScript it is possible to use == ("double equals") or === ("triple equals") to compare two values. What is the difference and why do we prefer triple equals?
+The double equals will convert two values in an argument to the same data type before comparing the two values. 
+The triple equals is preffered over the == as it compares the value and the data type to make sure that they are the exact same for e.g.
+
+const myInt = 1
+const myBoolean = true
+myInt === myBoolean; //this would be false
+myInt == myBoolean; //this would be true
+
+In the first statement, the values assigned to the variables myInt and myBoolean have different data types therefore it returns false.
+Whereas in the second statement, the variable myBoolean is converted into an int and therefore given the value of 1 which makes it equal to myInt which then returns true.
+
